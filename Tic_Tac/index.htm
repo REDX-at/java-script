@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Game</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      gap: 7rem;
+      height: 100vh;
+      background-color: antiquewhite;
+    }
+
+    .body-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7rem;
+      height: 100vh;
+    }
+    .blocks {
+      background-color: rgb(84, 32, 32);
+      width: 300px;
+      height: 300px;
+      font-size: 200px;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 30px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
+    .player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      margin-bottom: 800px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: rgb(45, 95, 143);
+    }
+
+    .para-play {
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgb(64, 27, 27);
+    }
+
+    .hide_X {
+      display: none;
+    }
+
+    .logo-add {
+      background-color: rgb(170, 131, 131);
+    }
+
+    .score {
+      height: 200px;
+      width: 200px;
+      background-color: rgb(56, 23, 23);
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .table {
+      grid-column: 1 / -1;
+      justify-self: center;
+      margin-bottom: 100px;
+      display: flex;
+      gap: 10rem;
+    }
+
+    .vs {
+      font-size: 10rem;
+      color: rgb(84, 32, 32);
+    }
+
+    .label {
+      font-size: 8rem;
+      text-align: center;
+      color: white;
+    }
+
+    body .run {
+      display: none;
+    }
+    .go-run {
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin-left: 300px;
+      margin-top: 700px;
+    }
+    .input-text {
+      border: none;
+      padding: 3rem;
+      font-size: 3rem;
+      border-radius: 30px;
+      background-color: rgb(84, 32, 32);
+      color: white;
+    }
+
+    .input-text::placeholder {
+      color: inherit;
+      opacity: 50%;
+    }
+
+    .btn {
+      border: none;
+      cursor: pointer;
+      padding: 4rem 6rem 4rem 6rem;
+      font-size: 3rem;
+      border-radius: 40px;
+      background-color: rgb(53, 53, 109);
+      color: white;
+    }
+  </style>
+  <body>
+    <section class="go-run">
+      <input
+        class="input-text in-p1"
+        type="text"
+        placeholder="Player 1"
+        required
+      />
+      <input
+        class="input-text in-p2"
+        type="text"
+        placeholder="Player 2"
+        required
+      />
+      <button class="btn">START</button>
+    </section>
+    <div class="body-container run">
+      <div class="player player--01">
+        <div class="logo logo--player-00"></div>
+        <p class="para-play para--p1">Player 1</p>
+      </div>
+      <main class="container">
+        <div class="table">
+          <div class="score score--p1">
+            <p class="label table-p1">0</p>
+          </div>
+          <p class="vs">-</p>
+          <div class="score score--p2">
+            <p class="label table-p2">0</p>
+          </div>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+        <div class="blocks">
+          <p class="x_o hide_X"></p>
+        </div>
+      </main>
+      <div class="player player--02">
+        <div class="logo logo--player-01"></div>
+        <p class="para-play para--p2">Player 2</p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
