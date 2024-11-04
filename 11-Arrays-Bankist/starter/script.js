@@ -95,4 +95,19 @@ btnLogin.addEventListener('click', function () {
   // if (inputLoginUsername.value === 'aimen' && inputLoginPin.value === '1937') {
   containerApp.classList.add('app--visible');
   // }
+}); 
+
+const eurToUsd = 1.1;
+
+const movementsUSD = movements.map(function (mov) {
+  return mov * eurToUsd;
 });
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementsUSDfor = [];
+
+const movUsd = movements.map(mov => mov * eurToUsd);
+
+console.log(movUsd);

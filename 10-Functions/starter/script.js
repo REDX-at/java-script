@@ -44,53 +44,37 @@
 // }
 
 // test drari
-// const functionParent = function () {
-//   var varibincre = 0;
-//   var varibincre2 = 1;
+// const functionParent = function () {/
 
-//   return function () {
-//     varibincre++;
-//     varibincre2++;
-//     console.log(`${varibincre} test`);
-//     console.log(`${varibincre2} test`);
+// let f;
+
+// const g = function () {
+//   const a = 2;
+
+//   f = function () {
+//     console.log(a * 2);
 //   };
 // };
 
-// const functionchidle = functionParent();
+// g();
+// f();
 
-// functionchidle();
-// functionchidle();
-// functionchidle();
+// const d = function () {
+//   const a = 4;
 
-let f;
+//   // f = function () {
+//   //   console.log(a * 2);
+//   // };
+//   f = 3;
+// };
 
-const g = function () {
-  const a = 2;
+// d();
+// console.log(f);
 
-  f = function () {
-    console.log(a * 2);
-  };
-};
+// const person = {
+//   name: 'Aimen',
+//   age: 28,
+//   hobbies: ['coding', 'designing'],
+// };
 
-g();
-f();
-
-const d = function () {
-  const a = 4;
-
-  // f = function () {
-  //   console.log(a * 2);
-  // };
-  f = 3;
-};
-
-d();
-console.log(f);
-
-const person = {
-  name: 'Aimen',
-  age: 28,
-  hobbies: ['coding', 'designing'],
-};
-
-console.dir(typeof f);
+// console.dir(typeof f);
